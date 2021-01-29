@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Hair product online</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
+
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Font Awesome -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+  <!-- Bootstrap Scripts -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+  </script>
+</head>
+
+<body>
+  <section class="colored-section container-fluid" id="title">
+    <!-- top -->
+
+    <div class="top-head">
+
+      <h5>20% cashbacks on all orders</h5>
+
+    </div>
+
+    <!-- Title -->
+
+    <div class="row title-text">
+
+      <div class="col-lg-12">
+        <h1 class="big-heading">Hi friend;</h1>
+        <h1 class="big-heading">Time to update your beauty routine!</h1>
+      </div>
+
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <img class="title-image img-fluid" src="image/product.PNG" alt="product">
+      </div>
+    </div>
+  </section>
+
+
+  <!-- description -->
+
+  <section class="description container-fluid">
+    <div class="row">
+      <div class="desc-box col-lg-12">
+        <h1 class="desc-title">Anubha is using Bare Anatomy's<br> product since 03.04.2020</h1>
+        <h2 class="desc-text">and has invited you to amp up your beauty game!</h5>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- offer -->
+  <section class="offer container-fluid">
+    <div class="row">
+      <div class="offer-box col-lg-12">
+        <h5 class="offer-title">use code <span class="code"><a id="p1">ANUBHA08</a>&nbsp;&nbsp; <a href="#"
+              onclick="copyToClipboard('#p1')"> COPY</a></span> on your first purchase and get</h5>
+        <h4 class="offer-ammount-box">FLAT<span class="offer-ammount"> &#x20b9;250</span> OFF </h4>
+        <p>This will auto applied if you follow the link below</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="offer-box col-lg-12">
+        <button type="button" class="btn btn-primary btn-lg">START SHOPPING</button>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- image -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="column">
+        <img class="img-fluid" src="image/1.jpg" style="width:100%">
+      </div>
+      <div class="column">
+        <img class="img-fluid" src="image/2.jpg" style="width:100%">
+      </div>
+      <div class="column">
+        <img class="img-fluid" src="image/3.jpg" style="width:100%">
+      </div>
+      <div class="column">
+        <img class="img-fluid" src="image/4.jpg" style="width:100%">
+      </div>
+    </div>
+  </div>
+
+  <SCript>
+    //javascript code for copy offer code.
+    function copyToClipboard(element) {
+      var $temp = $("<input>");
+      $("body").append($temp);
+      $temp.val($(element).text()).select();
+      document.execCommand("copy");
+      $temp.remove();
+    }
+  </SCript>
+</body>
+
+</html>

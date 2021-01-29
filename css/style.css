@@ -1,0 +1,208 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h3,
+h5 {
+  color: white;
+  text-align: center;
+}
+
+p {
+  color: #01385e;
+  font-style: italic;
+  font-size: 1.2rem;
+  padding-top: 10px;
+}
+
+h4 {
+  text-align: center;
+  position: relative;
+}
+
+h4::before {
+  content: "";
+  position: absolute;
+  transform: translateY(18px);
+  background: #ffe5d1;
+  width: 195px;
+  height: 25px;
+  z-index: -1;
+
+}
+
+.container-fluid {
+  margin: 0;
+  padding: 0;
+}
+
+/* css code of title section */
+.colored-section {
+  background-color: #ffe5d1;
+  color: #fff;
+
+}
+
+.top-head {
+  background-color: #01385e;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+.big-heading {
+  color: #01385e;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+}
+
+.title-text {
+  margin-top: 5%;
+}
+
+.title-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+/* css code of description section */
+
+.description {
+  background-color: #01385e;
+  text-align: center;
+}
+
+.desc-box {
+  padding: 5%;
+}
+
+.desc-title {
+  color: white;
+}
+
+.desc-text {
+  color: #ffe5d1;
+  padding-top: 2%;
+  font-family: "Times New Roman", Times, serif;
+}
+
+/* css code of offer section */
+
+.offer-title {
+  color: red;
+  padding-top: 5%;
+  text-align: center;
+}
+
+.code {
+  color: black !important;
+  border: 2px solid #01385e;
+  padding-left: 1%;
+  padding-right: 1%;
+}
+
+.code :hover {
+  background-color: #ffe5d1;
+}
+
+.offer-ammount {
+  color: #01385e;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.offer-ammount-box {
+  color: red;
+  font-weight: bold;
+}
+
+.btn-primary {
+  background-color: #01385e;
+}
+
+.btn-primary:hover {
+  background-color: #ffe5d1;
+  color: #01385e;
+}
+
+.offer-box {
+  text-align: center;
+  padding-bottom: 2%;
+}
+
+
+/* Code for resopnsive image layout */
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0;
+}
+
+.column img {
+  vertical-align: middle;
+  width: 100%;
+
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+
+  /* For mobile phones: */
+  .big-heading {
+    padding-left: 15%;
+    padding-right: 15%;
+    font-size: 38px;
+  }
+
+  .title-text {
+    padding-top: 10%;
+  }
+
+  .title-image {
+    padding-bottom: 50px;
+  }
+
+  .description {
+    padding: 5%;
+  }
+
+  .desc-title {
+    font-size: 25px;
+  }
+
+  .desc-text {
+    font-size: 30px;
+  }
+
+  .offer {
+    padding-right: 30%;
+    padding-left: 30%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+
+  .offer-title {
+    line-height: 1.6;
+  }
+}
